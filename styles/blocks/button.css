@@ -1,0 +1,16 @@
+.button {
+  color: var(--color-dark-blue2);
+  background: var(--color-white);
+  border-radius: 32px;
+  width: 100%;
+  height: 56px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  text-align: center;
+  border: none;
+}
+
+.button:active {
+  scale: 98%;
+}
