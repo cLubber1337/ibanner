@@ -3,6 +3,7 @@
   --container-padding-x: 24px;
 
   --color-white: #fff;
+  --color-white-opacity: rgba(255, 255, 255, 0.5);
   --color-dark-blue: #141131;
   --color-dark-blue2: #070b33;
   --color-bg-plan: rgba(255, 255, 255, 0.1);
