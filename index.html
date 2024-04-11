@@ -15,7 +15,7 @@
       <main class="content">
         <section class="section container">
           <div class="hero">
-            <h1 class="hero__title">Get Unlimited Access</h1>
+            <h1 data-i18n="Get Unlimited <br>Access" class="hero__title">Get Unlimited Access</h1>
           </div>
         </section>
         <section class="section container">
@@ -25,21 +25,27 @@
                 <article class="features__item__card unlimited-art-card">
                   <div class="oval-top-unlimited-art"></div>
                   <div class="item-shadow-mask">
-                    <p class="features__item__title">Unlimited Art Creation</p>
+                    <p class="features__item__title" data-i18n="Unlimited Art <br>Creation">
+                      Unlimited Art <br />Creation
+                    </p>
                   </div>
                 </article>
               </li>
               <li class="features__item">
                 <article class="features__item__card exclusive-styles-card">
                   <div class="item-shadow-mask">
-                    <p class="features__item__title">Exclusive Styles</p>
+                    <p class="features__item__title" data-i18n="Exclusive <br>Styles">
+                      Exclusive <br />Styles
+                    </p>
                   </div>
                 </article>
               </li>
               <li class="features__item">
                 <article class="features__item__card magic-avatars-cards">
                   <div class="item-shadow-mask">
-                    <p class="features__item__title">Magic Avatars With 20% Off</p>
+                    <p class="features__item__title" data-i18n="Magic Avatars <br>With 20% Off">
+                      Magic Avatars <br />With 20% Off
+                    </p>
                   </div>
                 </article>
               </li>
@@ -50,44 +56,50 @@
           <div class="cta">
             <div class="cta__plans">
               <div id="apple" class="plan plan-active">
-                <div class="best-offer-badge">BEST OFFER</div>
+                <div class="best-offer-badge" data-i18n="BEST OFFER">BEST OFFER</div>
                 <div class="plan__inner">
                   <div class="plan__info">
-                    <p class="plan__title">YEARLY ACCESS</p>
-                    <p class="plan__description">Just $39.99 per year</p>
+                    <p class="plan__title" data-i18n="YEARLY ACCESS">YEARLY ACCESS</p>
+                    <p class="plan__description" data-i18n="Just {{price}} per year">
+                      Just {{price}} per year
+                    </p>
                   </div>
                   <div class="plan__price plan__price-best-offer">
-                    <p class="plan__price__value">$0.48</p>
-                    <p class="plan__price__duration">per week</p>
+                    <p class="plan__price__value" data-i18n="{{price}} <br>per week">
+                      {{price}} <br />per week
+                    </p>
                   </div>
                 </div>
               </div>
               <div id="google" class="plan">
                 <div class="plan__inner">
                   <div>
-                    <p class="plan__title">WEEKLY ACCESS</p>
+                    <p class="plan__title" data-i18n="WEEKLY ACCESS">WEEKLY ACCESS</p>
                   </div>
                   <div class="plan__price">
-                    <p class="plan__price__value">$6.99</p>
-                    <p class="plan__price__duration">per week</p>
+                    <p class="plan__price__value" data-i18n="{{price}} <br>per week">
+                      {{price}} <br />per week
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <button id="continue-button" class="button" type="button">Continue</button>
+            <button id="continue-button" data-i18n="Continue" class="button" type="button">
+              Continue
+            </button>
           </div>
         </section>
       </main>
       <footer class="footer container">
         <ul class="footer__list">
           <li class="footer__item">
-            <a href="#" class="footer__item__text">Terms of Use</a>
+            <a href="#" class="footer__item__text" data-i18n="Terms of Use">Terms of Use</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__item__text">Privacy Policy</a>
+            <a href="#" class="footer__item__text" data-i18n="Privacy Policy">Privacy Policy</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__item__text">Restore</a>
+            <a data-i18n="Restore" href="#" class="footer__item__text">Restore</a>
           </li>
         </ul>
       </footer>
