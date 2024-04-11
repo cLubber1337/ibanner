@@ -1,5 +1,2 @@
 import './styles/style.css'
-
-function main() {
-  const title = document.querySelector('.title')
-}
+import './scripts/choose-plan.js'
