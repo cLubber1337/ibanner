@@ -9,6 +9,7 @@ export async function localize() {
   const paramsLang = urlParams.get('lang')
   let locale = paramsLang || langFromBrowser
   locale = setNewUrlWithLang(locale, DEFAULT_LOCALE, LOCALES)
+  document.body.setAttribute('data-locale', locale)
 
   const elementsWithDataI18n = document.querySelectorAll('[data-i18n]')
   const currentTranslations = await fetchTranslations(locale)

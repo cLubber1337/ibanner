@@ -6,11 +6,17 @@ body {
   font-weight: 400;
   line-height: 1.2;
   color: var(--color-white);
+
+  background: linear-gradient(136.62deg, rgb(218 40 255) 31.017%, rgb(127 204 255) 121.398%);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.section {
+  position: relative;
 }
 
 .container {
@@ -26,15 +32,38 @@ a {
 
   height: 100%;
 
-  background: linear-gradient(
-      196.7deg,
-      rgb(0 0 0 / 0%) -8.278%,
-      rgb(21 5 52 / 64%) 14.832%,
-      rgb(0 0 0 / 86%) 22.824%,
-      rgb(9 1 25 / 95%) 31.856%,
-      rgb(0 0 0 / 95%) 68.177%,
-      rgb(5 1 14 / 95%) 87.528%
-    ),
-    url('../public/images/bg.png'), no-repeat;
+  background: url('../public/images/bg-img.png') no-repeat;
+  background-position-x: center;
+  background-position-y: -290px;
   background-size: cover;
+}
+
+.wrapper-with-gradient {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+    196.7deg,
+    rgb(0 0 0 / 0%) -8.278%,
+    rgb(21 5 52 / 64%) 14.832%,
+    rgb(0 0 0 / 86%) 22.824%,
+    rgb(9 1 25 / 95%) 31.856%,
+    rgb(0 0 0 / 95%) 68.177%,
+    rgb(5 1 14 / 95%) 87.528%
+  );
+}
+
+.content {
+  flex: 1;
+}
+
+@media only screen and (device-width <= 375px) and (orientation: portrait) {
+  .wrapper {
+    background-position-x: center;
+    background-position-y: -313px;
+    background-size: 570px;
+  }
 }

@@ -2,6 +2,37 @@
   margin-bottom: 44px;
 }
 
+body[data-locale='fr'] .cta {
+  margin-bottom: 27px;
+}
+
+body[data-locale='de'] .cta {
+  margin-bottom: 34px;
+}
+
 .cta__plans {
   margin-bottom: 16px;
+}
+
+@media only screen and (max-device-width: 375px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  .cta {
+    margin-bottom: 26px;
+  }
+  body[data-locale='de'] .cta {
+    margin-bottom: 15px;
+  }
+
+  .cta__plans {
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) {
+  .cta__plans {
+    margin-bottom: 22px;
+  }
+
+  body[data-locale='fr'] .cta {
+    margin-bottom: 44px;
+  }
 }

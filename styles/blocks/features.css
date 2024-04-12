@@ -35,7 +35,7 @@
 }
 
 .features__item__card.magic-avatars-cards {
-  background: url('../../public/test.png') no-repeat -22px -22px;
+  background: url('../../public/images/features/magic-avatars.png') no-repeat -22px -22px;
   background-size: 149px;
 }
 
@@ -80,4 +80,34 @@
     rgb(21 7 47) 100%
   );
   border-radius: 11px;
+}
+
+@media only screen and (max-device-width: 375px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  .features__list {
+    display: flex;
+    column-gap: 7px;
+    justify-content: space-between;
+
+    max-width: 327px;
+    margin-inline: auto;
+  }
+
+  .features {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) {
+  .features__list {
+    max-width: 365px;
+  }
+
+  .features {
+    margin-bottom: 70px;
+  }
+
+  body[data-locale='fr'] .features,
+  body[data-locale='de'] .features {
+    margin-bottom: 50px;
+  }
 }

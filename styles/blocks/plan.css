@@ -5,7 +5,9 @@
   padding: 8px 24px;
 
   background: var(--color-bg-plan);
+  border: 1px solid var(--color-bg-plan);
   border-radius: 32px;
+  height: 56px;
 }
 
 .plan-active {
@@ -22,6 +24,11 @@
   display: grid;
   grid-template-columns: 73% 1fr;
   align-items: center;
+  height: 100%;
+}
+
+body[data-locale='fr'] .plan__inner {
+  grid-template-columns: 70% 1fr;
 }
 
 .plan__info {
@@ -68,4 +75,20 @@
 
   background: var(--color-white);
   border-radius: 10px;
+}
+
+@media only screen and (max-device-width: 375px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  .plan__inner {
+    grid-template-columns: 64% 1fr;
+  }
+
+  body[data-locale='fr'] .plan__inner {
+    grid-template-columns: 70% 1fr;
+  }
+}
+
+@media only screen and (min-device-width: 414px) {
+  .plan:first-child {
+    margin-bottom: 18px;
+  }
 }

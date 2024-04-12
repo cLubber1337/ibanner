@@ -1,4 +1,80 @@
 .header {
+  position: relative;
   height: 44px;
-  margin-bottom: 12.3rem;
+  margin-bottom: 197px;
+}
+
+body[data-locale='fr'] .header {
+  margin-bottom: 170px;
+}
+
+body[data-locale='de'] .header {
+  margin-bottom: 130px;
+}
+
+.oval-top-header {
+  position: absolute;
+  z-index: 1;
+  top: -36px;
+  right: -7px;
+
+  width: 403px;
+  height: 113px;
+
+  background: rgb(214 19 252 / 62%);
+  filter: blur(100px);
+  border-radius: 50%;
+}
+
+.close-button {
+  position: absolute;
+  top: 58px;
+  left: 12px;
+
+  padding: 10px 12px;
+
+  background: none;
+  border: none;
+}
+
+@media only screen and (device-width >= 414px) {
+  .header {
+    height: 50px;
+  }
+
+  body[data-locale='fr'] .header {
+    margin-bottom: 200px;
+  }
+
+  body[data-locale='de'] .header {
+    margin-bottom: 186px;
+  }
+}
+
+@media only screen and (device-width <= 375px) and (orientation: portrait) {
+  .header {
+    height: 21px;
+    margin-bottom: 97px;
+  }
+
+  body[data-locale='de'] .header {
+    margin-bottom: 35px;
+  }
+
+  body[data-locale='fr'] .header {
+    margin-bottom: 83px;
+  }
+
+  .oval-top-header {
+    position: absolute;
+    top: -67px;
+    right: -6px;
+
+    width: 388px;
+    height: 109px;
+  }
+
+  .close-button {
+    top: 27px;
+  }
 }
