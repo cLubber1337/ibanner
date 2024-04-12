@@ -21,7 +21,11 @@ export async function localize() {
 }
 
 async function fetchTranslations(locale) {
-  const response = await fetch(`../public/locale/${locale}.json`)
-
-  return await response.json()
+  try {
+    const response = await fetch(`../locale/${locale}.json`)
+    return await response.json()
+  } catch (error) {
+    console.error('Error fetching translations', error)
+    return {}
+  }
 }
