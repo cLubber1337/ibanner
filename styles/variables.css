@@ -3,10 +3,15 @@
   --container-padding-x: 24px;
 
   --color-white: #fff;
-  --color-white-opacity: rgba(255, 255, 255, 0.5);
+  --color-white-opacity: rgb(255 255 255 / 50%);
   --color-dark-blue: #141131;
   --color-dark-blue2: #070b33;
-  --color-bg-plan: rgba(255, 255, 255, 0.1);
+  --color-bg-plan: rgb(255 255 255 / 10%);
 
   --font3: 'Roboto', sans-serif;
+
+  @media (width <= 360px) {
+    --container-width: 100%;
+    --container-padding-x: 15px;
+  }
 }

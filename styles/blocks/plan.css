@@ -2,18 +2,18 @@
   position: relative;
 
   width: 100%;
+  height: 56px;
   padding: 8px 24px;
 
   background: var(--color-bg-plan);
   border: 1px solid var(--color-bg-plan);
   border-radius: 32px;
-  height: 56px;
 }
 
 .plan-active {
-  border: 1px solid var(--color-white);
   background: rgb(255 255 255 / 30%);
   backdrop-filter: blur(11px);
+  border: 1px solid var(--color-white);
 }
 
 .plan:first-child {
@@ -77,7 +77,7 @@ body[data-locale='fr'] .plan__inner {
   border-radius: 10px;
 }
 
-@media only screen and (max-device-width: 375px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (device-width <= 375px) and (orientation: portrait) {
   .plan__inner {
     grid-template-columns: 64% 1fr;
   }
@@ -87,7 +87,7 @@ body[data-locale='fr'] .plan__inner {
   }
 }
 
-@media only screen and (min-device-width: 414px) {
+@media only screen and (device-width >= 414px) {
   .plan:first-child {
     margin-bottom: 18px;
   }
