@@ -37,7 +37,7 @@ body[data-locale='de'] .header {
   border: none;
 }
 
-@media only screen and (device-width >= 414px) {
+@media only screen and (min-device-width: 414px) and (device-height >= 896px) {
   .header {
     height: 50px;
   }
@@ -76,5 +76,11 @@ body[data-locale='de'] .header {
 
   .close-button {
     top: 27px;
+  }
+}
+
+@media only screen and (device-width >= 414px) and (device-height <= 736px) {
+  .header {
+    margin-bottom: 140px;
   }
 }

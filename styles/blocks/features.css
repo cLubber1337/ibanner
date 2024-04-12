@@ -5,10 +5,10 @@
 
 .features__list {
   display: flex;
-  column-gap: 14px;
+  column-gap: 12px;
   justify-content: space-between;
 
-  max-width: 340px;
+  max-width: 100%;
   margin-inline: auto;
 }
 
@@ -43,8 +43,6 @@
   position: absolute;
   bottom: 11px;
   left: 8px;
-
-  max-width: 87px;
 
   font-size: 0.6875rem;
   line-height: 1.2;
@@ -85,7 +83,7 @@
 @media only screen and (device-width <= 375px) and (orientation: portrait) {
   .features__list {
     display: flex;
-    column-gap: 7px;
+    column-gap: 6px;
     justify-content: space-between;
 
     max-width: 327px;
@@ -97,17 +95,42 @@
   }
 }
 
-@media only screen and (device-width >= 414px) {
-  .features__list {
-    max-width: 365px;
-  }
-
+@media only screen and (device-width >= 414px) and (device-height >= 896px) {
   .features {
     margin-bottom: 70px;
+  }
+
+  .features__list {
+    max-width: 100%;
+  }
+
+  .features__item__card {
+    width: 112px;
+    height: 146px;
+  }
+
+  .features__item__card.magic-avatars-cards {
+    background: url(/public/images/features/magic-avatars.png) no-repeat -23px -24px;
+    background-size: 158px;
+  }
+
+  .features__item__title {
+    position: absolute;
+    bottom: 11px;
+    left: 8px;
+
+    font-size: 0.75rem;
+    line-height: 1.2;
   }
 
   body[data-locale='fr'] .features,
   body[data-locale='de'] .features {
     margin-bottom: 50px;
+  }
+}
+
+@media only screen and (device-width >= 414px) and (device-height <= 736px) {
+  .features {
+    margin-bottom: 35px;
   }
 }

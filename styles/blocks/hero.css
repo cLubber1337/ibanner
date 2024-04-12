@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-@media only screen and (min-device-width: 414px) {
+@media only screen and (min-device-width: 414px) and (device-height >= 896px) {
   .hero {
     margin-bottom: 3.2rem;
   }
@@ -19,5 +19,15 @@
   body[data-locale='fr'] .hero__title,
   body[data-locale='pt'] .hero__title {
     font-size: 2.3rem;
+  }
+}
+
+@media only screen and (device-width >= 414px) and (device-height <= 736px) {
+  .hero {
+    margin-bottom: 2.2rem;
+  }
+
+  .hero__title {
+    font-size: 2.325rem;
   }
 }

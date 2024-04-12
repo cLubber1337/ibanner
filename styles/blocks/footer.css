@@ -32,3 +32,9 @@ body[data-locale='fr'],
     padding-bottom: 10px;
   }
 }
+
+@media only screen and (device-width >= 414px) and (device-height <= 736px) {
+  .footer__list {
+    padding-bottom: 10px;
+  }
+}

@@ -87,8 +87,8 @@ body[data-locale='fr'] .plan__inner {
   }
 }
 
-@media only screen and (device-width >= 414px) {
-  .plan:first-child {
-    margin-bottom: 18px;
+@media only screen and (min-device-width: 414px) and (device-height >= 896px) {
+  .plan {
+    height: 64px;
   }
 }
