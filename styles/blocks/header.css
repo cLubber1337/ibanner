@@ -66,10 +66,8 @@ body[data-locale='de'] .header {
   }
 
   .oval-top-header {
-    position: absolute;
     top: -67px;
     right: -6px;
-
     width: 388px;
     height: 109px;
   }
