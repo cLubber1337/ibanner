@@ -1,21 +1,23 @@
 .button {
-  color: var(--color-dark-blue2);
-  background: var(--color-white);
-  border-radius: 32px;
   width: 100%;
   height: 56px;
-  font-weight: 600;
+
   font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.2;
+  color: var(--color-dark-blue2);
   text-align: center;
+
+  background: var(--color-white);
   border: none;
+  border-radius: 32px;
 }
 
 .button:active {
   scale: 98%;
 }
 
-@media only screen and (min-device-width: 414px) and (device-height >= 896px) {
+@media only screen and (device-width >= 414px) and (device-height >= 896px) {
   .button {
     height: 64px;
   }

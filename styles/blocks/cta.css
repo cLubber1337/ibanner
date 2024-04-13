@@ -28,7 +28,7 @@ body[data-locale='de'] .cta {
   }
 }
 
-@media only screen and (min-device-width: 414px) and (device-height >= 896px) {
+@media only screen and (device-width >= 414px) and (device-height >= 896px) {
   body[data-locale='fr'] .cta {
     margin-bottom: 44px;
   }

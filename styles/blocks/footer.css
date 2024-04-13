@@ -9,11 +9,10 @@ body[data-locale='es'] .footer__list {
   column-gap: 15px;
 }
 
-body[data-locale='de'],
-body[data-locale='fr'],
-.footer__list {
-  column-gap: 15px;
+body[data-locale='de'] .footer__list,
+body[data-locale='fr'] .footer__list {
   flex-wrap: wrap;
+  column-gap: 15px;
 }
 
 .footer__item__text {
@@ -23,13 +22,13 @@ body[data-locale='fr'],
   letter-spacing: 1px;
 }
 
-@media only screen and (max-device-width: 375px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-  body[data-locale='es'] .footer__list {
-    column-gap: 12px;
-  }
-
+@media only screen and (device-width <= 375px) and (orientation: portrait) {
   .footer__list {
     padding-bottom: 10px;
+  }
+
+  body[data-locale='es'] .footer__list {
+    column-gap: 12px;
   }
 }
 

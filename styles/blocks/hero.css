@@ -9,13 +9,13 @@
   text-align: center;
 }
 
-@media only screen and (min-device-width: 414px) and (device-height >= 896px) {
+@media only screen and (device-width >= 414px) and (device-height >= 896px) {
   .hero {
     margin-bottom: 3.2rem;
   }
 }
 
-@media only screen and (max-device-width: 375px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (device-width <= 375px) and (orientation: portrait) {
   body[data-locale='fr'] .hero__title,
   body[data-locale='pt'] .hero__title {
     font-size: 2.3rem;
