@@ -7,6 +7,7 @@
   --color-dark-blue2: #070b33;
   --color-bg-plan: rgb(255 255 255 / 10%);
   --font3: 'Roboto', sans-serif;
+  --z-index-oval: 100;
 
   @media (width <= 360px) {
     --container-width: 100%;

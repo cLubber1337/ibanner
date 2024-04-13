@@ -13,8 +13,8 @@ body[data-locale='de'] .header {
 }
 
 .oval-top-header {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: var(--z-index-oval);
   top: -36px;
   right: -7px;
 
@@ -37,7 +37,7 @@ body[data-locale='de'] .header {
   border: none;
 }
 
-@media only screen and (min-device-width: 414px) and (device-height >= 896px) {
+@media only screen and (device-width >= 414px) and (device-height >= 896px) {
   .header {
     height: 50px;
   }

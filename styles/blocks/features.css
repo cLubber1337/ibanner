@@ -50,7 +50,7 @@
 
 .oval-top-unlimited-art {
   position: absolute;
-  z-index: 1;
+  z-index: var(--z-index-oval);
   top: -12px;
   left: -31px;
 
@@ -100,17 +100,13 @@
     margin-bottom: 70px;
   }
 
-  .features__list {
-    max-width: 100%;
-  }
-
   .features__item__card {
     width: 112px;
     height: 146px;
   }
 
   .features__item__card.magic-avatars-cards {
-    background: url(/public/images/features/magic-avatars.png) no-repeat -23px -24px;
+    background: url('/public/images/features/magic-avatars.png') no-repeat -23px -24px;
     background-size: 158px;
   }
 
