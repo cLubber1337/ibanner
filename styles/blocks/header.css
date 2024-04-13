@@ -1,15 +1,6 @@
 .header {
   position: relative;
   height: 44px;
-  margin-bottom: 197px;
-}
-
-body[data-locale='fr'] .header {
-  margin-bottom: 170px;
-}
-
-body[data-locale='de'] .header {
-  margin-bottom: 130px;
 }
 
 .oval-top-header {
@@ -41,28 +32,11 @@ body[data-locale='de'] .header {
   .header {
     height: 50px;
   }
-
-  body[data-locale='fr'] .header {
-    margin-bottom: 200px;
-  }
-
-  body[data-locale='de'] .header {
-    margin-bottom: 186px;
-  }
 }
 
 @media only screen and (device-width <= 375px) and (orientation: portrait) {
   .header {
     height: 21px;
-    margin-bottom: 97px;
-  }
-
-  body[data-locale='de'] .header {
-    margin-bottom: 35px;
-  }
-
-  body[data-locale='fr'] .header {
-    margin-bottom: 83px;
   }
 
   .oval-top-header {
@@ -74,11 +48,5 @@ body[data-locale='de'] .header {
 
   .close-button {
     top: 27px;
-  }
-}
-
-@media only screen and (device-width >= 414px) and (device-height <= 736px) {
-  .header {
-    margin-bottom: 140px;
   }
 }
