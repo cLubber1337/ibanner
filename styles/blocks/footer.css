@@ -8,11 +8,10 @@
 body[data-locale='es'] .footer__list {
   column-gap: 15px;
 }
-
+body[data-locale='pt'] .footer__list,
 body[data-locale='de'] .footer__list,
 body[data-locale='fr'] .footer__list {
-  flex-wrap: wrap;
-  column-gap: 15px;
+  column-gap: 10px;
 }
 
 .footer__item__text {
@@ -20,6 +19,12 @@ body[data-locale='fr'] .footer__list {
   line-height: 1.3;
   color: var(--color-white-opacity);
   letter-spacing: 1px;
+}
+
+body[data-locale='de'] .footer__item__text,
+body[data-locale='fr'] .footer__item__text {
+  font-size: 0.6875rem;
+  letter-spacing: normal;
 }
 
 @media only screen and (device-width <= 375px) and (orientation: portrait) {
