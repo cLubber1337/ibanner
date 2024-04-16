@@ -25,17 +25,17 @@
 .features__item__card.unlimited-art-card {
   position: relative;
   overflow: hidden;
-  background: url('../../public/images/features/unlimited-art.jpeg') no-repeat -6px 0;
+  background: url('../../assets/images/features/unlimited-art.jpeg') no-repeat -6px 0;
   background-size: cover;
 }
 
 .features__item__card.exclusive-styles-card {
-  background: url('../../public/images/features/exclusive-styles.jpeg') no-repeat 0 -82px;
+  background: url('../../assets/images/features/exclusive-styles.jpeg') no-repeat 0 -82px;
   background-size: cover;
 }
 
 .features__item__card.magic-avatars-cards {
-  background: url('../../public/images/features/magic-avatars.png') no-repeat -22px -22px;
+  background: url('../../assets/images/features/magic-avatars.png') no-repeat -22px -22px;
   background-size: 149px;
 }
 
@@ -106,7 +106,7 @@
   }
 
   .features__item__card.magic-avatars-cards {
-    background: url('/public/images/features/magic-avatars.png') no-repeat -23px -24px;
+    background: url('../../assets/images/features/magic-avatars.png') no-repeat -23px -24px;
     background-size: 158px;
   }
 
