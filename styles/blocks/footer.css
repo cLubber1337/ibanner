@@ -8,6 +8,7 @@
 body[data-locale='es'] .footer__list {
   column-gap: 15px;
 }
+
 body[data-locale='pt'] .footer__list,
 body[data-locale='de'] .footer__list,
 body[data-locale='fr'] .footer__list {
