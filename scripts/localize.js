@@ -16,7 +16,12 @@ export async function localize() {
 
   elementsWithDataI18n.forEach((element) => {
     const dataI18n = element.getAttribute('data-i18n')
-    element.innerHTML = currentTranslations[dataI18n]
+    const price = element.getAttribute('data-price')
+    if (price) {
+      element.innerHTML = currentTranslations[dataI18n].replace('{{price}}', price)
+    } else {
+      element.innerHTML = currentTranslations[dataI18n]
+    }
   })
 }
 
